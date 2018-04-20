@@ -1,0 +1,126 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Kien Hoang, Sanslab, LIC=VGXGK-ZXFP2-12ILE-5DXIS-FI8F9-J65GC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.25.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+C:\Users\kien\Dropbox\Project2\MDK-ARM\Project2.uvprojx
+Project File Date:  04/18/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Project2'
+compiling radio.c...
+..\Radio\sx1272Regs-Fsk.h(46): warning:  #47-D: incompatible redefinition of macro "REG_OCP"  (declared at line 131 of "..\Radio\sx126x.h")
+  #define REG_OCP                                     0x0B
+..\Radio\sx1272Regs-LoRa.h(67): warning:  #47-D: incompatible redefinition of macro "REG_LR_PAYLOADLENGTH"  (declared at line 91 of "..\Radio\sx126x.h")
+  #define REG_LR_PAYLOADLENGTH                        0x22
+..\Radio\sx1272Regs-LoRa.h(78): warning:  #47-D: incompatible redefinition of macro "REG_LR_SYNCWORD"  (declared at line 101 of "..\Radio\sx126x.h")
+  #define REG_LR_SYNCWORD                             0x39
+..\Radio\sx1272.h(47): warning:  #47-D: incompatible redefinition of macro "RADIO_WAKEUP_TIME"  (declared at line 39 of "..\Radio\sx126x.h")
+  #define RADIO_WAKEUP_TIME                           1 // [ms]
+..\Radio\sx1272.h(52): warning:  #47-D: incompatible redefinition of macro "LORA_MAC_PRIVATE_SYNCWORD"  (declared at line 106 of "..\Radio\sx126x.h")
+  #define LORA_MAC_PRIVATE_SYNCWORD                   0x12
+..\Radio\sx1272.h(57): warning:  #47-D: incompatible redefinition of macro "LORA_MAC_PUBLIC_SYNCWORD"  (declared at line 111 of "..\Radio\sx126x.h")
+  #define LORA_MAC_PUBLIC_SYNCWORD                    0x34
+..\Radio\radio.c(415): warning:  #177-D: variable "RadioLoRaSymbTime"  was declared but never referenced
+  static double RadioLoRaSymbTime[3][6] = {{ 32.768, 16.384, 8.192, 4.096, 2.048, 1.024 },  // 125 KHz
+..\Radio\radio.c(466): warning:  #177-D: variable "RadioPublicNetwork"  was declared but never referenced
+  static RadioPublicNetwork_t RadioPublicNetwork = { false };
+..\Radio\radio.c(471): warning:  #177-D: variable "RadioEvents"  was declared but never referenced
+  static RadioEvents_t* RadioEvents;
+..\Radio\radio.c: 9 warnings, 0 errors
+compiling sx1272.c...
+..\Radio\sx1272.c(196): warning:  #550-D: variable "RadioEvents"  was set but never used
+  static RadioEvents_t *RadioEvents;
+..\Radio\sx1272.c: 1 warning, 0 errors
+compiling sx1272_board.c...
+compiling spi-board.c...
+compiling gpio-board.c...
+compiling gpio.c...
+compiling main.c...
+compiling PingPong.c...
+compiling MacApp.c...
+MacApp.c(43): warning:  #177-D: variable "DevEui"  was declared but never referenced
+  static uint8_t DevEui[] = LORAWAN_DEVICE_EUI;
+MacApp.c(44): warning:  #177-D: variable "AppEui"  was declared but never referenced
+  static uint8_t AppEui[] = LORAWAN_APPLICATION_EUI;
+MacApp.c(45): warning:  #177-D: variable "AppKey"  was declared but never referenced
+  static uint8_t AppKey[] = LORAWAN_APPLICATION_KEY;
+MacApp.c(48): warning:  #177-D: variable "NwkSkey"  was declared but never referenced
+  static uint8_t NwkSkey[] = LORAWAN_NWKSKEY;
+MacApp.c(49): warning:  #177-D: variable "AppSKey"  was declared but never referenced
+  static uint8_t AppSKey[] = LORAWAN_APPSKEY;
+MacApp.c(52): warning:  #177-D: variable "DevAddr"  was declared but never referenced
+  static uint8_t DevAddr = LORAWAN_DEVICE_ADDRESS;
+MacApp.c(56): warning:  #177-D: variable "AppPort"  was declared but never referenced
+  static uint8_t AppPort = LORAWAN_APP_PORT;
+MacApp.c(59): warning:  #177-D: variable "AppDataSize"  was declared but never referenced
+  static uint8_t AppDataSize = 16;
+MacApp.c(60): warning:  #177-D: variable "AppDataSizeBackup"  was declared but never referenced
+  static uint8_t AppDataSizeBackup = 16;
+MacApp.c(66): warning:  #177-D: variable "AppData"  was declared but never referenced
+  static uint8_t AppData[LORAWAN_APP_DATA_MAX_SIZE];
+MacApp.c(69): warning:  #177-D: variable "IsTxConfirmed"  was declared but never referenced
+  static uint8_t IsTxConfirmed = LORAWAN_CONFIRMED_MSG_ON;
+MacApp.c(72): warning:  #177-D: variable "TxDutyCycleTime"  was declared but never referenced
+  static uint32_t TxDutyCycleTime;
+MacApp.c(75): warning:  #177-D: variable "TxNextPacketTimer"  was declared but never referenced
+  static TimerEvent_t TxNextPacketTimer;
+MacApp.c(78): warning:  #177-D: variable "AppLedStateOn"  was declared but never referenced
+  static bool AppLedStateOn = false;
+MacApp.c(81): warning:  #177-D: variable "Led1Timer"  was declared but never referenced
+  static TimerEvent_t Led1Timer;
+MacApp.c(83): warning:  #177-D: variable "Led2Timer"  was declared but never referenced
+  static TimerEvent_t Led2Timer;
+MacApp.c(86): warning:  #177-D: variable "NextTx"  was declared but never referenced
+  static bool NextTx = true;
+MacApp.c(95): warning:  #177-D: variable "DeviceState"  was declared but never referenced
+  }DeviceState;
+MacApp.c: 18 warnings, 0 errors
+linking...
+Program Size: Code=9220 RO-data=384 RW-data=40 ZI-data=1296  
+"Project2\Project2.axf" - 0 Error(s), 28 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Project2
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+Build Time Elapsed:  00:00:16
+</pre>
+</body>
+</html>

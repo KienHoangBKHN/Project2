@@ -1,0 +1,11 @@
+project2\regionus915-hybrid.o: ..\Mac\region\RegionUS915-Hybrid.c
+project2\regionus915-hybrid.o: ../Inc/..\Utilities\utilities.h
+project2\regionus915-hybrid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+project2\regionus915-hybrid.o: ..\Mac\region\RegionCommon.h
+project2\regionus915-hybrid.o: ../Inc/..\Mac\LoRaMac.h
+project2\regionus915-hybrid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+project2\regionus915-hybrid.o: ../Inc/..\Mac\..\Board\timer.h
+project2\regionus915-hybrid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+project2\regionus915-hybrid.o: ../Inc/..\Mac\..\Radio\radio.h
+project2\regionus915-hybrid.o: ../Inc/..\Mac\region/Region.h
+project2\regionus915-hybrid.o: ..\Mac\region\RegionUS915-Hybrid.h
